@@ -1,26 +1,26 @@
 {
   "compilerOptions": {
     /* 基本設定 */
-    "target": "ES2022",                   // 最新のブラウザをターゲット
-    "lib": ["ES2022", "DOM"],            // ES2022 と DOM API をサポート
-    "module": "ESNext",                  // ES Modules を使用
-    "moduleResolution": "Bundler",       // Vite に最適なモジュール解決
-    "jsx": "react-jsx",                  // React を JSX 形式で使用
-    "strict": true,                      // 厳密な型チェックを有効化
-    "skipLibCheck": true,                // ライブラリの型チェックをスキップ
-    "isolatedModules": true,             // 各モジュールを独立して処理
+    "target": "ES2022", // 最新のブラウザをターゲット
+    "lib": ["ES2022", "DOM"], // ES2022 と DOM API をサポート
+    "module": "ESNext", // ES Modules を使用
+    "moduleResolution": "Bundler", // Vite に最適なモジュール解決
+    "jsx": "react-jsx", // React を JSX 形式で使用
+    "strict": true, // 厳密な型チェックを有効化
+    "skipLibCheck": true, // ライブラリの型チェックをスキップ
+    "isolatedModules": true, // 各モジュールを独立して処理
 
     /* 開発体験向上 */
-    "noEmit": true,                      // 実際のファイル出力を防止
-    "allowImportingTsExtensions": true,  // TypeScript 拡張子をインポート可能にする
-    "moduleDetection": "force",          // モジュールとして扱う条件を厳密化
+    "noEmit": true, // 実際のファイル出力を防止
+    "allowImportingTsExtensions": true, // TypeScript 拡張子をインポート可能にする
+    "moduleDetection": "force", // モジュールとして扱う条件を厳密化
 
     /* コード品質向上 */
-    "noUnusedLocals": true,              // 未使用のローカル変数をエラーにする
-    "noUnusedParameters": true,          // 未使用の関数パラメータをエラーにする
-    "noFallthroughCasesInSwitch": true,  // switch 文のフォールスルーを防止
+    "noUnusedLocals": true, // 未使用のローカル変数をエラーにする
+    "noUnusedParameters": true, // 未使用の関数パラメータをエラーにする
+    "noFallthroughCasesInSwitch": true, // switch 文のフォールスルーを防止
     "noUncheckedSideEffectImports": true // 副作用のあるインポートを警告
   },
   "include": ["src/**/*", "vite.config.ts"], // ソースコードと Vite 設定を対象
-  "exclude": ["node_modules", "dist"]       // 不要なディレクトリを除外
+  "exclude": ["node_modules", "dist"] // 不要なディレクトリを除外
 }

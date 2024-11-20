@@ -1,0 +1,10 @@
+{
+    "editor.tabSize": 2, // インデント幅を設定
+    "editor.insertSpaces": true, // タブではなくスペースを使用
+    "[javascript]": {
+        "editor.tabSize": 2 // JavaScriptに特化した設定
+    },
+    "[typescript]": {
+        "editor.tabSize": 2 // TypeScriptに特化した設定
+    }
+}
