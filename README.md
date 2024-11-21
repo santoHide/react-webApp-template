@@ -29,28 +29,30 @@ firebase hosting
 ### volta
 
 ```
-brew install volta
-export PATH="$HOME/.volta/bin:$PATH" #pathを通す
-volta install node@20 #node install
-volta pin node@20 package.jsonにnode versionの書き込み
+$ brew install volta
+$ export PATH="$HOME/.volta/bin:$PATH" #pathを通す
+$ volta install node@20 #node install
+$ volta pin node@20 package.jsonにnode versionの書き込み
 ```
 
 ### vite (フロントエンド開発ツール)
 
 ```
-npm create vite@latest # インストールも踏まえて
-npm install # 必要な依存関係のインストール
+$ npm create vite@latest # インストールも踏まえて
+$ npm install # 必要な依存関係のインストール
 ```
 
-## prettierとlinterのインストール
+## prettierとlinter
 
+### インストール(package.jsonにあるから不要かも)
 package.jsonのdevDependenciesに入れるように設定
 
 ```
 #prettier
-npm install --save-dev prettier
+$ npm install --save-dev prettier
 #linter
-npm install --save-dev eslint
+$ npm install --save-dev eslint
 ```
 
-## linter
+### prettierの実行
+`$ npm run format`を使用してください

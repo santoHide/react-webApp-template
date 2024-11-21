@@ -1,9 +1,8 @@
 {
     "editor.tabSize": 2, // インデント幅を設定
+    "editor.formatOnSave": false, // 保存時の自動フォーマットを無効化
     "editor.insertSpaces": true, // タブではなくスペースを使用
-    "[javascript]": {
-        "editor.tabSize": 2 // JavaScriptに特化した設定
-    },
+    "prettier.enable": false,
     "[typescript]": {
         "editor.tabSize": 2 // TypeScriptに特化した設定
     }
