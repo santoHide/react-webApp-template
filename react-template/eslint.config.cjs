@@ -1,6 +1,7 @@
 const tsParser = require("@typescript-eslint/parser"); // TypeScript パーサーをインポート
 const tsPlugin = require("@typescript-eslint/eslint-plugin");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
+const unusedImportsPlugin = require("eslint-plugin-unused-imports");
 
 module.exports = [
   {
@@ -18,11 +19,13 @@ module.exports = [
     plugins: {
       "@typescript-eslint": tsPlugin,
       "jsx-a11y": jsxA11yPlugin,
+      "unused-imports": unusedImportsPlugin,
     },
     //ルールを書き溜める
     rules: {
-      "@typescript-eslint/no-unused-vars": "warn", // 未使用変数を警告
       "jsx-a11y/anchor-is-valid": "warn", // アクセシビリティのチェック
+      "@typescript-eslint/no-unused-vars": "error", // 未使用変数を警告
+      "unused-imports/no-unused-imports": "error", // 未使用の import をエラーに
     },
   },
   {
