@@ -23,7 +23,7 @@ jobs:
       # 3. 依存関係をインストール
       - name: Install dependencies
         run:  |
-          cd react-template
+          ls -la
           npm install --no-package-lock
 
       # 4. ESLint を実行
