@@ -24,10 +24,11 @@ jobs:
       - name: Install dependencies
         run:  |
           ls -la
+          cd ~/react-template
           npm install --no-package-lock
 
       # 4. ESLint を実行
       - name: Run ESLint
         run:  |
-          cd react-template
+          cd ~/react-template
           npx eslint . --config eslint.config.cjs
