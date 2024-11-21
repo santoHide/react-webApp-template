@@ -23,7 +23,6 @@ jobs:
       # 3. 依存関係をインストール
       - name: Install dependencies
         run:  |
-          ls -la
           cd react-template
           npm install --no-package-lock
 
@@ -31,4 +30,4 @@ jobs:
       - name: Run ESLint
         run:  |
           cd react-template
-          npx eslint . --config eslint.config.cjs
+          npx eslint .
